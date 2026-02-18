@@ -487,6 +487,8 @@ class GitHubRepos extends HTMLElement {
           background: #238636;
           border-radius: 6px;
           transition: background 0.15s;
+          flex-shrink: 0;
+          white-space: nowrap;
         }
         .pages-link:hover {
           background: #2ea043;
@@ -542,6 +544,7 @@ class GitHubRepos extends HTMLElement {
           align-items: center;
           gap: 8px;
           margin-bottom: 8px;
+          overflow: hidden;
         }
 
         .repo-icon { color: #57606a; flex-shrink: 0; }
@@ -553,6 +556,7 @@ class GitHubRepos extends HTMLElement {
           overflow: hidden;
           text-overflow: ellipsis;
           white-space: nowrap;
+          min-width: 0;
         }
 
         .fork-badge {
@@ -561,6 +565,7 @@ class GitHubRepos extends HTMLElement {
           background: #ddf4ff;
           border-radius: 12px;
           color: #0969da;
+          flex-shrink: 0;
         }
 
         .repo-desc {
